@@ -24,19 +24,19 @@
 				<div class="main-login main-center">
 				<center><font size="6">
                                     Sign Up </font>
-                                <br>
-                                <br>
+                                <br></center>
                                 
-                                <font size="3" ><a style="color:white;" font-color="#ffffff" href="page1.php">HEALTH CENTER REGISTRATION</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;<a style=color:white;" href="page2.php">CUSTOMER</a>
-                                    <br></font></center>
-                                    <br>
+                                
+                                    <ul style="overflow: hidden;">  <li><font size="3" ><a style="color:white;" href="page1.php">HEALTH CENTER </a></li>
+                                     <li>  <a style=color:white; href="page2.php">PATIENT </a></li></ul>
+                                    </font>
                                     
-                                 
-					<form class="" method="post" action="#">
+                                  <form class="" method="post" action="#">
+						
+						<form class="" method="post" action="health_centre_registration_validate.php">
 						
 						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<label for="name" class="cols-sm-2 control-label">Health Centre Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -44,9 +44,26 @@
 								</div>
 							</div>
 						</div>
-
+                                                <div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Address</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="address" id="name1"  placeholder="Enter your Address"/>
+								</div>
+							</div>
+						</div>
+                                               <div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Contact No</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="contact" class="form-control" name="contact" id="address"  placeholder="Enter your contact no"/>
+								</div>
+							</div>
+						</div>
 						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Your Email</label>
+							<label for="email" class="cols-sm-2 control-label">Email address</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
@@ -60,7 +77,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+									<input type="text" class="form-control" name="Username" id="username"  placeholder="Enter your Username"/>
 								</div>
 							</div>
 						</div>
@@ -80,13 +97,13 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+									<input type="password" class="form-control" name="repassword" id="confirm"  placeholder="Confirm your Password"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group ">
-							<a href="http://deepak646.blogspot.in" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                                                    <a href="health_centre_registration_validate.php" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
 						</div>
 						
 					</form>
@@ -100,3 +117,4 @@
     <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
+
